@@ -6,7 +6,7 @@ import Modal from "./Modal";
 const App = () => {
   const [showModal, setShowModal] = useState(false)
   return (
-    <div>
+    <div onClick={() => setShowModal(!showModal)}>
         <button onClick={() => setShowModal(!showModal)}>Show Modal</button>
         <Modal show={showModal} onClose={() => setShowModal(!showModal)}/>
     </div>
